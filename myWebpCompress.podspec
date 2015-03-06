@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.homepage         = "https://github.com/rickykaka1899/WebpCompress"
   s.license          = 'MIT'  
   s.author           = { "houlzh" => "houlzh@yonyou.com" }
-  s.source           = { :git => "https://github.com/rickykaka1899/WebpCompress.git" }
+  s.source           = { :git => "https://github.com/rickykaka1899/WebpCompress.git", :tag => s.version.to_s}
   s.platform     = :ios, '7.0'
   s.requires_arc = false
   
