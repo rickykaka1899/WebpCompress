@@ -7,7 +7,7 @@
 //
 
 #import "WAViewController.h"
-#import "WAWebpCompressUtil.h"
+#import "WAImgCompressUtil.h"
 
 @interface WAViewController ()
 
@@ -84,9 +84,7 @@
   {
     UIImage* image = [info objectForKey:@"UIImagePickerControllerOriginalImage"];
     [self.iImageView setImage:image];
-    [CWAWebpCompressUtil compressToWebpWithImage:image withBlock:^(NSData *resultData, NSError *error)
-     {
-     }];
+
   }
 }
 

@@ -21,10 +21,7 @@
 		A44F3D951AA97CB40088A413 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A44F3D771AA97CB40088A413 /* UIKit.framework */; };
 		A44F3D9D1AA97CB40088A413 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A44F3D9B1AA97CB40088A413 /* InfoPlist.strings */; };
 		A44F3D9F1AA97CB40088A413 /* WebpCompressDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A44F3D9E1AA97CB40088A413 /* WebpCompressDemoTests.m */; };
-		A44F3DB11AA97CCF0088A413 /* UIImage+WebP.m in Sources */ = {isa = PBXBuildFile; fileRef = A44F3DAB1AA97CCF0088A413 /* UIImage+WebP.m */; };
-		A44F3DB21AA97CCF0088A413 /* WebP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A44F3DAC1AA97CCF0088A413 /* WebP.framework */; };
 		A44F3DB31AA97CCF0088A413 /* WAImgCompressUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = A44F3DAE1AA97CCF0088A413 /* WAImgCompressUtil.m */; };
-		A44F3DB41AA97CCF0088A413 /* WAWebpCompressUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = A44F3DB01AA97CCF0088A413 /* WAWebpCompressUtil.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,13 +54,8 @@
 		A44F3D9A1AA97CB40088A413 /* WebpCompressDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WebpCompressDemoTests-Info.plist"; sourceTree = "<group>"; };
 		A44F3D9C1AA97CB40088A413 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A44F3D9E1AA97CB40088A413 /* WebpCompressDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebpCompressDemoTests.m; sourceTree = "<group>"; };
-		A44F3DAA1AA97CCF0088A413 /* UIImage+WebP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+WebP.h"; sourceTree = "<group>"; };
-		A44F3DAB1AA97CCF0088A413 /* UIImage+WebP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+WebP.m"; sourceTree = "<group>"; };
-		A44F3DAC1AA97CCF0088A413 /* WebP.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WebP.framework; sourceTree = "<group>"; };
 		A44F3DAD1AA97CCF0088A413 /* WAImgCompressUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WAImgCompressUtil.h; sourceTree = "<group>"; };
 		A44F3DAE1AA97CCF0088A413 /* WAImgCompressUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WAImgCompressUtil.m; sourceTree = "<group>"; };
-		A44F3DAF1AA97CCF0088A413 /* WAWebpCompressUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WAWebpCompressUtil.h; sourceTree = "<group>"; };
-		A44F3DB01AA97CCF0088A413 /* WAWebpCompressUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WAWebpCompressUtil.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +63,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A44F3DB21AA97CCF0088A413 /* WebP.framework in Frameworks */,
 				A44F3D761AA97CB40088A413 /* CoreGraphics.framework in Frameworks */,
 				A44F3D781AA97CB40088A413 /* UIKit.framework in Frameworks */,
 				A44F3D741AA97CB40088A413 /* Foundation.framework in Frameworks */,
@@ -168,23 +159,10 @@
 		A44F3DA81AA97CCF0088A413 /* ImageCompress */ = {
 			isa = PBXGroup;
 			children = (
-				A44F3DA91AA97CCF0088A413 /* iOS-WebP */,
 				A44F3DAD1AA97CCF0088A413 /* WAImgCompressUtil.h */,
 				A44F3DAE1AA97CCF0088A413 /* WAImgCompressUtil.m */,
-				A44F3DAF1AA97CCF0088A413 /* WAWebpCompressUtil.h */,
-				A44F3DB01AA97CCF0088A413 /* WAWebpCompressUtil.m */,
 			);
 			path = ImageCompress;
-			sourceTree = "<group>";
-		};
-		A44F3DA91AA97CCF0088A413 /* iOS-WebP */ = {
-			isa = PBXGroup;
-			children = (
-				A44F3DAA1AA97CCF0088A413 /* UIImage+WebP.h */,
-				A44F3DAB1AA97CCF0088A413 /* UIImage+WebP.m */,
-				A44F3DAC1AA97CCF0088A413 /* WebP.framework */,
-			);
-			path = "iOS-WebP";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -286,10 +264,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A44F3D8A1AA97CB40088A413 /* WAViewController.m in Sources */,
-				A44F3DB41AA97CCF0088A413 /* WAWebpCompressUtil.m in Sources */,
 				A44F3D841AA97CB40088A413 /* WAAppDelegate.m in Sources */,
 				A44F3D801AA97CB40088A413 /* main.m in Sources */,
-				A44F3DB11AA97CCF0088A413 /* UIImage+WebP.m in Sources */,
 				A44F3DB31AA97CCF0088A413 /* WAImgCompressUtil.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -507,6 +483,7 @@
 				A44F3DA41AA97CB40088A413 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A44F3DA51AA97CB40088A413 /* Build configuration list for PBXNativeTarget "WebpCompressDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +492,7 @@
 				A44F3DA71AA97CB40088A413 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
